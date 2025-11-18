@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandrasekhar Madepalli Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; line-height:1.6; color:#333; }
+    header { background: #0A3D62; color: #fff; padding: 60px 20px; display:flex; flex-wrap:wrap; align-items:center; }
+    header img { border-radius:50%; width:200px; margin-right:40px; }
+    header div { max-width:600px; }
+    header h1 { font-size:48px; margin:0; }
+    header h2 { font-size:24px; margin:10px 0; font-weight:500; }
+    header p { font-size:18px; margin-bottom:20px; }
+    header .btn { padding:10px 20px; margin-right:10px; border:none; border-radius:5px; cursor:pointer; text-decoration:none; font-weight:500; }
+    .btn-primary { background:#1E90FF; color:#fff; }
+    .btn-secondary { background:#D1D8E0; color:#333; }
+
+    section { padding:80px 20px; max-width:1000px; margin:auto; }
+    section h2 { font-size:36px; margin-bottom:20px; color:#0A3D62; }
+    section p, section li { font-size:16px; margin-bottom:10px; }
+
+    .experience-card, .project-card, .service-card, .volunteer-card { background:#f4f4f4; padding:20px; border-radius:10px; margin-bottom:20px; }
+    ul { padding-left:20px; }
+
+    .grid-2 { display:flex; flex-wrap:wrap; gap:20px; }
+    .grid-2 > div { flex:1 1 calc(50% - 20px); }
+
+    footer { background:#0A3D62; color:#fff; text-align:center; padding:40px 20px; }
+    footer a { color:#1E90FF; text-decoration:none; }
+
+    @media(max-width:768px){
+      header { flex-direction:column; text-align:center; }
+      header img { margin:0 0 20px 0; }
+      .grid-2 { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<header>
+  <img src="profile.jpg" alt="Chandrasekhar Madepalli">
+  <div>
+    <h1>Chandrasekhar Madepalli</h1>
+    <h2>Cloud & MLOps Engineer | Community Volunteer</h2>
+    <p>Designing, automating, and deploying scalable ML pipelines while mentoring youth and contributing to local cricket programs.</p>
+    <a href="#contact" class="btn btn-primary">Contact Me</a>
+    <a href="#portfolio" class="btn btn-secondary">View Portfolio</a>
+  </div>
+</header>
+
+<!-- About Me -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>I design, automate, and deploy reliable machine learning and cloud infrastructure solutions. With over 15 years of experience, I specialize in building scalable platforms across AWS, Azure, DevOps, Kubernetes, Databricks, Snowflake, and Terraform.</p>
+  <p>Alongside my professional career, I volunteer in local cricket leagues as an umpire and youth coach, helping kids and young players grow their skills and confidence. I also participate in cultural and temple community programs, mentoring youth and supporting events.</p>
+  <p><strong>Education:</strong> Master in Computer Science, Osmania University, Hyderabad, 2004</p>
+</section>
+
+<!-- Professional Experience -->
+<section id="experience">
+  <h2>Professional Experience</h2>
+
+  <div class="experience-card">
+    <h3>Senior MLOps Engineer – Farmers Insurance (Sept 2022 – Present)</h3>
+    <ul>
+      <li>Built ML lifecycle infrastructure including CI/CD, ML instance management, API testing, image vulnerability management, DR setup</li>
+      <li>Tools: AWS SageMaker, ECR, S3, CloudWatch, Dynatrace, Splunk, Databricks, MLflow, Snowflake, EMR Serverless, Lambda, IAM, Terraform, Git, Jenkins</li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <h3>Senior DBA / DevOps Engineer – Bank of America (2016 – Sept 2022)</h3>
+    <ul>
+      <li>Database administration, migrations, CI/CD pipelines, Kubernetes orchestration, cloud automation, security compliance</li>
+      <li>Tools: AWS, Azure DevOps, Docker, Ansible, MSSQL, Python, Shell, Terraform, Jenkins, GitHub, RedHat Linux, SSRS/SSAS/SSIS, PowerShell</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <h2>Skills & Expertise</h2>
+  <ul>
+    <li>End-to-end ML pipelines: data prep, feature engineering, model training, validation, deployment</li>
+    <li>Scalable ML serving platforms with Kubernetes (EKS)</li>
+    <li>Containerized inference services and performance optimization</li>
+    <li>Observability: Datadog, Prometheus, Grafana, CloudWatch</li>
+    <li>Infrastructure Automation: Terraform, CloudFormation, CDK</li>
+    <li>Secure ML Operations: IAM, secrets rotation, container hardening, compliance</li>
+    <li>Cost Optimization / FinOps principles</li>
+    <li>Collaboration with data science teams to productionize ML workflows</li>
+  </ul>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <h2>Services</h2>
+  <div class="grid-2">
+    <div class="service-card">
+      <h3>Cloud Solutions</h3>
+      <p>Design, automation, and deployment of scalable cloud architectures.</p>
+    </div>
+    <div class="service-card">
+      <h3>MLOps Consulting</h3>
+      <p>End-to-end ML lifecycle management, pipeline automation, model monitoring, deployment best practices.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio / Projects -->
+<section id="portfolio">
+  <h2>Notable Projects</h2>
+  <div class="project-card">
+    <h3>Algorithmia → AWS SageMaker Migration</h3>
+    <p>Migrated ML models to AWS SageMaker for scalable, reliable deployment.</p>
+  </div>
+  <div class="project-card">
+    <h3>Infrastructure Cost Reduction</h3>
+    <p>Reduced $400K annual infrastructure cost via optimized hosting, compute, and storage.</p>
+  </div>
+  <div class="project-card">
+    <h3>Automated ML Pipelines</h3>
+    <p>Built automated resource scaling and deployment pipelines for high availability and low latency.</p>
+  </div>
+</section>
+
+<!-- Volunteer -->
+<section id="volunteer">
+  <h2>Community & Volunteer Work</h2>
+  <ul>
+    <li>Coaching youth cricket for free</li>
+    <li>Umpiring local league matches</li>
+    <li>Mentoring kids in batting, bowling, fielding fundamentals</li>
+    <li>Supporting league events and organization</li>
+    <li>Participation in temple and cultural programs</li>
+  </ul>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <h2>Get in Touch</h2>
+  <div class="grid-2">
+    <div>
+      <p><strong>Email:</strong> chandra7924@gmail.com</p>
+      <p><strong>Phone:</strong> +1 919-995-0054</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/chandra24/" target="_blank">linkedin.com/in/chandra24/</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/chandra7924/" target="_blank">github.com/chandra7924/</a></p>
+    </div>
+    <div>
+      <form>
+        <input type="text" placeholder="Name" style="width:100%; padding:10px; margin-bottom:10px;"><br>
+        <input type="email" placeholder="Email" style="width:100%; padding:10px; margin-bottom:10px;"><br>
+        <textarea placeholder="Message" style="width:100%; padding:10px; margin-bottom:10px;"></textarea><br>
+        <button type="submit" style="padding:10px 20px; background:#1E90FF; color:#fff; border:none; border-radius:5px;">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Chandrasekhar Madepalli. All rights reserved.
+</footer>
+
+</body>
+</html>
